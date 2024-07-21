@@ -1,10 +1,15 @@
 let number = prompt("Birinchi raqamni kiriting: ");
 let number2 = prompt("Birinchi raqamni kiriting: ");
-let belgi1 = confirm('* ni bajarsinmi?');
-let belgi2 = confirm('/ ni bajarsinmi?');
-let belgi3 = confirm('+ ni bajarsinmi?');
-let belgi4 = confirm('- ni bajarsinmi?');
-console.log( Number(number) * Number(number2) );
-console.log( Number(number) / Number(number2) );
-console.log( Number(number) + Number(number2) );
-console.log( Number(number) - Number(number2) );
+let belgi = prompt("Belgi operatorini kiriting (+, -, *, /): ");
+if (belgi === "+") {
+    console.log(Number(number) + Number(number2));
+} else if (belgi === "-") {
+    console.log(Number(number) - Number(number2));
+} else if (belgi === "*") {
+    console.log(Number(number) * Number(number2));
+} else if (belgi === "/") {
+    console.log(number / Number(number2));
+}
+    else {
+        console.log("Noto'g'ri amal")
+    }
